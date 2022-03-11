@@ -42,7 +42,7 @@ for (const dailyWord of [
   if (confirmedLetters.pos2 && dailyWord[2] !== confirmedLetters.pos2) continue;
   if (confirmedLetters.pos3 && dailyWord[3] !== confirmedLetters.pos3) continue;
   if (confirmedLetters.pos4 && dailyWord[4] !== confirmedLetters.pos4) continue;
-  if (confirmedLetters.pos4 && dailyWord[5] !== confirmedLetters.pos5) continue;
+  if (confirmedLetters.pos5 && dailyWord[5] !== confirmedLetters.pos5) continue;
 
   // Remove words with wrong letters
   if (dailyWord.split("").some((letter) => wrongLetters.includes(letter)))
@@ -122,14 +122,14 @@ const pos3Rankings = getRankings(3);
 const pos4Rankings = getRankings(4);
 const pos5Rankings = getRankings(5);
 
-console.log({
-  pos0Rankings,
-  pos1Rankings,
-  pos2Rankings,
-  pos3Rankings,
-  pos4Rankings,
-  pos5Rankings,
-});
+// console.log({
+//   pos0Rankings,
+//   pos1Rankings,
+//   pos2Rankings,
+//   pos3Rankings,
+//   pos4Rankings,
+//   pos5Rankings,
+// });
 
 const getScore = (word) => {
   const score =
